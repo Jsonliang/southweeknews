@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/feedback_toolbar"
+        layout="@layout/tool_bar"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E9E9E9">
+
+        <EditText
+            android:id="@+id/feedback_suggestcotent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/placeholder_bg"
+            android:gravity="top"
+            android:hint="请输入反馈,我们将为您不断该进"/>
+
+        <EditText
+            android:id="@+id/feedback_suggestnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/feedback_suggestcotent"
+            android:layout_alignRight="@id/feedback_suggestcotent"
+            android:layout_below="@id/feedback_suggestcotent"
+           android:layout_marginTop="20dp"
+            android:background="#F7F7F7"
+
+            android:hint="请输入手机号码或者邮箱"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

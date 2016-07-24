@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/setting_toolbar"
+        layout="@layout/tool_bar" />
+<View
+    android:id="@+id/lineview"
+    android:layout_below="@id/setting_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:background="#f5f4f4"/>
+    <ListView
+        android:layout_below="@id/lineview"
+        android:id="@+id/setting_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/recommand"
+        android:layout_below="@id/setting_lv"
+        android:background="#f5f4f4"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="推荐"/>
+
+
+    <RelativeLayout
+        android:id="@+id/recommand_layout"
+        android:layout_below="@id/recommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/recommand_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_zhidao_logo"/>
+        <TextView
+            android:text="知道"
+            android:id="@+id/zhidao"
+            android:layout_toRightOf="@id/recommand_icon"
+            android:layout_alignTop="@id/recommand_icon"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:text="让知道成为一种享受"
+            android:layout_toRightOf="@id/recommand_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zhidao"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+                <TextView
+                    android:id="@+id/detail_tv_sub_subject"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="正在加载数据..."/>
+                <TextView
+                    android:id="@+id/detail_tv_author"
+                    android:layout_below="@+id/detail_tv_sub_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/detail_tv_time"
+                    android:layout_below="@+id/detail_tv_author"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/detail_tv_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4b5cb9"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/detail_tv_time"
+                    android:layout_below="@+id/detail_tv_author"
+                    android:layout_marginLeft="15dp"
+                   />
+                <WebView
+                    android:id="@+id/detail_webview"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/detail_tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </WebView>
+            </RelativeLayout>
+
+        </ScrollView>
+        <include
+            android:id="@+id/bottom_layout"
+            layout="@layout/bottom_layout_article_detail" />
+
+        <!--<include layout="@layout/item_no_data_layout" />-->
+    </RelativeLayout>
+
+   <!-- <include layout="@layout/loading_layout" />-->
+</FrameLayout>

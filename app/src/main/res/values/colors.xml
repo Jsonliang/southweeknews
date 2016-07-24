@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorLine">#b1aeae</color>
+    <color name="colorLoginBg">#e2e1e1</color>
+    <color name="colorHintColor">#bcbaba</color>
+    <color name="colorGray">#9b9999</color>
+
+    <color name="colorGetCodeBg">#f1a7a7</color>
+    <color name="colorWhite">#fff</color>
+<!--author 卢潇 -->
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+    <!--白色-->
+    <color name="white">#FFFFFFFF</color>
+    <!--黑色-->
+    <color name="black">#FF343434</color>
+    <!--半透明黑-->
+    <color name="transparent_black_color">#80000000</color>
+    <!--状态栏黑-->
+    <color name="status_bar_color">#10000000</color>
+    <!--倒计时黑-->
+    <color name="count_down_color">#33000000</color>
+    <!--背景色-->
+    <color name="background_color">#FFF0F0F0</color>
+    <!--app主色-->
+    <color name="base_color">#FFFF6A22</color>
+    <!--浅app主色-->
+    <color name="light_base_color">#FFF87739</color>
+    <!--浅app主色-->
+    <color name="base_color_press">#FFFF9664</color>
+    <!--秘鲁色-->
+    <color name="peru">#FFE18313</color>
+    <!--边框色-->
+    <color name="border_color">#FFE6E6E6</color>
+    <!--浅边框色-->
+    <color name="light_border_color">#FFDCDCDC</color>
+    <!--灰色-->
+    <color name="gray">#FF979797</color>
+    <!--法国灰色-->
+    <color name="french_gray">#FF8D8D8D</color>
+    <!--浅灰色-->
+    <color name="light_gray">#FFB3B3B3</color>
+    <!--深灰色-->
+    <color name="dimgray">#FF646464</color>
+    <!--暗灰色-->
+    <color name="darkgray">#FF2E3843</color>
+    <!--矢车菊蓝-->
+    <color name="corn_flower_blue">#FF5F9BF8</color>
+    <!--深天空蓝-->
+    <color name="deep_sky_blue">#FF00B7ED</color>
+    <!--海洋绿-->
+    <color name="sea_green">#FF55C476</color>
+    <!--浅海洋绿-->
+    <color name="light_sea_green">#FF9EE1B2</color>
+    <!--橙色-->
+    <color name="orange">#FFFF4400</color>
+    <!--红色-->
+    <color name="red">#FFDC0101</color>
+</resources>

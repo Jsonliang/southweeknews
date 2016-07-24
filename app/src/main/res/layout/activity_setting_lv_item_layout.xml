@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <TextView
+        android:id="@+id/setting_lv_itemtitle"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="推送通知"
+        android:textSize="23sp"
+        android:layout_marginLeft="15dp"
+        />
+    <CheckBox
+        android:button="@null"
+        android:id="@+id/setting_lVitemimage_button"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/setting_image_selector"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/setting_lVitem_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="0.00M"
+        android:textSize="20sp"
+        android:visibility="gone"
+       />
+
+    <ImageView
+        android:id="@+id/setting_lVitem_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_split_more"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

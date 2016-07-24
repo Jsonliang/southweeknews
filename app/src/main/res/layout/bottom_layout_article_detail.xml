@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_tab"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorWhite">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#ffdcdcdc" />
+
+    <RelativeLayout
+        android:id="@+id/layout_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_tabbar_back_on" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_font"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@+id/layout_fav"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_fontsize_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_fav"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_toLeftOf="@+id/layout_like"
+        android:onClick="onClick">
+
+        <ImageView
+            android:id="@+id/iv_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_nav_collect_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/layout_like"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_toLeftOf="@+id/layout_comment"
+        android:onClick="onClick">
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_like_normal" />
+
+        <TextView
+            android:id="@+id/tv_like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:textColor="#ff5c5c5c"
+            android:textSize="10.0sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_toLeftOf="@+id/layout_share"
+        android:onClick="onClick">
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_compose_normal" />
+
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:textColor="#ff5c5c5c"
+            android:textSize="10.0sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_share"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_alignParentRight="true"
+        android:onClick="onClick">
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/tv_share_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:textColor="#ff5c5c5c"
+            android:textSize="10.0sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/slidImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                fresco:placeholderImage="@drawable/pic_headphoto_normal"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="true" />
+
+            <TextView
+                android:id="@+id/frag_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/slidImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="登录" />
+
+            <LinearLayout
+                android:id="@+id/frag_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/frag_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/ic_leftnav_set"
+                    android:text="  设置" />
+
+                <TextView
+                    android:id="@+id/frag_colletion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:drawableLeft="@drawable/ic_leftnav_collect"
+                    android:gravity="center_vertical"
+                    android:text="收藏" />
+            </LinearLayout>
+
+            <com.example.administrator.southweek.ui.base.BaseExpandablelistview
+                android:id="@+id/frag_expandlistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/frag_bottom_layout"
+                android:layout_below="@id/frag_login"
+                android:layout_marginTop="20dp"
+                android:childDivider="@null"
+                android:divider="@null"
+                android:listSelector="#fff" />
+
+        <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/main3_listview_item_image"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/main3_listview_item_subject"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/main3_listview_item_image"
+            android:text="四种形态”是全面从严治党的具体举措" />
+
+        <TextView
+            android:id="@+id/main3_listview_item_display_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main3_listview_item_subject"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/main3_listview_item_image"
+            android:text="5月20日" />
+
+        <TextView
+            android:id="@+id/main3_listview_item_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main3_listview_item_subject"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/main3_listview_item_display_time"
+            android:text="调查" />
+
+        <TextView
+            android:id="@+id/main3_listview_item_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main3_listview_item_subject"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/main3_listview_item_source"
+            android:drawableLeft="@drawable/ic_comment_grey"
+            android:text="100" />
+
+        <TextView
+            android:id="@+id/main3_listview_item_share_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main3_listview_item_subject"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/main3_listview_item_comment_count"
+            android:drawableLeft="@drawable/ic_share_grey"
+            android:text="100" />
+
+    </RelativeLayout>
+</RelativeLayout>
